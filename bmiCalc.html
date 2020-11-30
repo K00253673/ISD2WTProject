@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Simply Life</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="icon" href="images/favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/form.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="images/logosmall.png" alt="Simply Life logo"></a>
+            </div>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="healthyEating.html"><i class="fas fa-utensils"></i> Eat Better</a>
+                <a href="fitness.html"><i class="fas fa-dumbbell"></i> Get Fit</a>
+                <a href="mental.html"><i class="fas fa-user-md"></i> Mental Health</a>
+                <a href="bmiCalc.html"><i class="fas fa-calculator"></i> BMI Calculator</a>
+                <a href="login.html"><i class="fas fa-arrow-circle-right"></i> Login/Register</a>
+                <input type="search" name="searchfield" id="searchfield" placeholder="Search...">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <div class="row">
+                <div class="sideimage">
+                    <img src="images/bmiCalc.jpg" alt="a green apple with measureing tape around it">
+                </div>
+                <div class="container">
+                <div class="header">
+                    <h2>BMI Calculator</h2>
+                </div>
+                <form id="BMIform" class="form">
+                    <div class="form-control">
+                        <label for="height"><i class="fas fa-envelope"></i> Height</label>
+                        <input type="number" step="0.1" placeholder="Height in m" id="height" />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="weight"><i class="fas fa-key"></i> Weight</label>
+                        <input type="number" step="0.1" placeholder="Weight in kgs" id="weight"/>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <button>Calculate BMI</button>
+                    <input type="reset" id="reset" value="Reset">
+                    
+                </form>
+            </div>
+                </div>    
+                <div class="BMIinfo" id="info">
+                    <h4>Your BMI is: <span id="result"> </span></h4>
+                    <p>You are considered <span id="bmitype"> </span></p>
+                    <div id="obese">
+                        <p>
+                            A BMI in this range is considered obese, which puts
+                            you at the highest risk for diseases and health
+                            conditions such as heart disease, stroke, high blood
+                            pressure and some cancers. Obesity also increases 
+                            the risk of developing type 2 diabetes and high 
+                            cholesterol.
+                        </p>
+                        <p>To decrease your BMI, a registered dietitian can
+                            evaluate your diet to ensure all your nutrient needs
+                            are being met during weight loss. Regular physical
+                            activity is also key to achieving weight loss and 
+                            preventing further weight gain.</p>
+                    </div>
+                    <div id="normal">
+                        <p>A BMI in this range is considered a healthy weight, 
+                            which means your risk of weight-related conditions
+                            like type 2 diabetes, heart disease and high blood 
+                            pressure is generally lower.</p>
+                        <p>An active lifestyle and a diet full of nutritious
+                            foods help maintain a healthy weight, preserve lean
+                            muscle mass and stay in a normal BMI range. </p>
+                    </div>
+                    <div id="underweight">
+                        <p>A BMI in this range is considered
+                            underweight, which means you could be at risk for 
+                            chronic health issues. A low percentage of body fat 
+                            can prevent your body from absorbing essential
+                            vitamins and minerals.</p>
+                        <p>If you're looking to increase your BMI to a normal 
+                            range, track your calories and macronutrients 
+                            to ensure that what you eat is meeting your
+                            nutritional needs. In addition, regular exercise
+                            will build lean muscle mass while helping increase 
+                            your appetite.</p>
+                    </div>
+                    <div id="overweight">
+                        <p>A BMI in this range is considered overweight, 
+                            which means your risk for health conditions, such 
+                            as type 2 diabetes, heart disease and high blood
+                            pressure, increases. A waist circumference
+                            measurement can give an additional assessment of
+                            body composition because excess belly fat is 
+                            another predictor for disease risk.</p>
+                        <p>An overweight BMI can indicate that you may need to
+                            make healthier lifestyle changes. Along with dietary
+                            changes, getting more physical activity can help 
+                            with weight loss, increase lean muscle mass and 
+                            prevent further weight gain. Start tracking your 
+                            food intake and activity to get an idea of the
+                            difference between how many calories you're 
+                            consuming and how many you're burning.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="foot1">
+                <h4>Navigation</h4>
+                <a href="index.html">Home</a><br>
+                <a href="healthyEating.html">Healthy Eating</a><br>
+                <a href="getFit.html">Get Fit</a><br>
+                <a href="bmiCalc.html">BMI Calculator</a><br>
+                <a href="admin.html">Admin home</a>
+            </div>
+            <div class="foot2">
+                <h4>Contact Us</h4>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a><br>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <div class="foot3">
+                <h4>Created by</h4>
+                <p>John Morgan K00253673</p><br>
+                <span id="clock"></span><br>
+                <span id="date"></span>
+            </div>
+            <div class="copy">
+            <small>&copy; Copyright 2020, Simply Life</small>
+            </div>
+        </footer>
+        <script src="js/base.js"></script>
+        <script src="js/BMIform.js"></script>
+    </body>
+</html>
+
+</body>
+</html>

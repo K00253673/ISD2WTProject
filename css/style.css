@@ -1,0 +1,370 @@
+/*header*/
+header {
+    font-family: 'Dosis', sans-serif;
+    color: rgba(146,146,146,1.00);
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+}
+.content{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+body{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    background: linear-gradient(white,#66B032);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+#obese, #normal, #overweight, #underweight, .BMIinfo, .sideimage{
+    display:none;
+}
+.calculator, .BMIinfo, article{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.5em 0.5em 1em 0.5em;
+    margin-top: 0.5em;
+    background-color: rgb(230, 255, 230);
+    
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1.5em 1em;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+footer{
+    clear: both;
+    background-color: #333;
+    color: #f2f2f2;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+footer a, footer h4{
+    color: #f2f2f2;
+    text-decoration: none;
+}
+#searchfield::placeholder {
+    color: #333;
+}
+#searchfield {
+    box-sizing: content-box;
+    font-size: 100%;
+    font-family: inherit;
+    margin-top: 1.2em;
+}
+
+#searchfield {
+    background: #eee;
+    border: solid 1px #999;
+    border-radius: 3px;
+    padding: 4px 5px 4px 5px;
+    width: 6em;
+    transition: all .3s;
+}
+#searchfield:focus {
+    width: 12em;
+    background-color: #fff;
+    border-color: #74abff;
+    box-shadow: 0 0 10px rgba(109, 207, 246, .75);
+}
+.container{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+.meditation{
+    
+    display: block;
+}
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+}
+
+.header h2 {
+	margin: 0;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+        box-shadow: 0 0 10px rgba(109, 207, 246, .75);
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.hide{
+    display: none;
+}
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form button, #reset{
+	background-color: #66B032;
+	border: 2px solid #66B032;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+input:hover{
+    box-shadow: 0 0 10px rgba(109, 207, 246, .75);
+}
+#reset{
+    background-color: #FE2712;
+    border: 2px solid #FE2712;
+}
+div#pwdWrap {
+    display: flex; 
+    align-items: center; 
+    border: solid 1px #9b9b9b; 
+    background-color: #fff; 
+    border-radius: 6px;
+}
+label{
+    cursor: pointer;
+}
+form .fa-eye {
+    margin: 0 6px; 
+    cursor: pointer;
+    color: #888; 
+    visibility: visible;
+    top: 40px;
+}
+
+form .fa-eye-slash {
+    margin: 0 6px; 
+    cursor: pointer;
+    color: #888; 
+    font-size: .95em; 
+    visibility: visible;
+    top: 40px;
+}
+.meditation, .stressrelief{
+    padding: 0.5em;
+}
+.monks{
+    padding-left: 1em;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.5em 0.5em 1em 0.5em;
+    margin-top: 0.5em;
+    background-color: #ebfaeb;
+}
+.hero{
+    display: none;
+}
+@media screen and (max-width: 1164px) {
+    .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+      position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav{
+      clear:both;
+  }
+  .logo{
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }
+  .logo{
+      overflow: visable;
+  }
+  header{
+      clear:both;
+  }
+  #searchfield:focus{
+      width: 15em;
+  }
+  
+}
+@media only screen and (min-width: 992px) {/* laptop view */
+
+.calculator{
+    display: block;
+    width: 40%;
+    max-height: 100%;
+}
+.BMIinfo{
+    clear:both;
+}
+.row{
+    display: flex;
+}
+.foot1, .foot2, .foot3{
+    float: left;
+    width:33%;
+}
+.copy{
+    clear:both;
+}
+.hero{
+    display: block;
+    
+}
+.container{
+      width:40%;
+  }
+  .monks{
+      order:2;
+  }
+  .medinfo, .stressinfo{
+      margin-left: 5em;
+      margin-right: 5em;
+  }
+  .row1,.row2{
+      display: flex;
+  }
+  .why, .when, .where, .what{
+      display:flex;
+      width:48%;
+      margin-left: 0.5em;
+  }
+  .benefits, .strength{
+      width: 48%;
+      margin-left: 0.5em;
+  }
+  .plan1, .plan2,.plan3{
+      width: 32%;
+      margin-left: 0.5em;
+  }
+  
+}
+@media only screen and (min-width: 1200px) { /* desktop view */
+    .sideimage{
+    display: flex;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.meditation, .stressrelief{
+    display: flex;
+    align-items: stretch;
+    flex-basis: auto;
+}
+.stressinfo{
+    padding-right: 1em;
+    margin-top: 4em; 
+    width: 66%;
+}
+.medinfo{
+    margin-top: 4em;
+    width:66%;
+}
+.medinfo, .stressinfo{
+      margin-left: 10em;
+      margin-right: 10em;
+  }
+}
